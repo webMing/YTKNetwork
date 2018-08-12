@@ -16,6 +16,8 @@
 		907A1082212000C100F577E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A1081212000C100F577E1 /* main.m */; };
 		907A108C212000C100F577E1 /* YTKNetworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A108B212000C100F577E1 /* YTKNetworkTests.m */; };
 		907A1097212000C100F577E1 /* YTKNetworkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A1096212000C100F577E1 /* YTKNetworkUITests.m */; };
+		907A10AD212008B400F577E1 /* AppDelegate+Configure.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A10AC212008B400F577E1 /* AppDelegate+Configure.m */; };
+		907A10B12120094200F577E1 /* YTKLoginApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A10B02120094200F577E1 /* YTKLoginApi.m */; };
 		CBBC6BD012FC71520B4C01FB /* libPods-YTKNetworkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7586F22C4ED37C8744399023 /* libPods-YTKNetworkTests.a */; };
 		D5B23C29CCF305E58E5635F5 /* libPods-YTKNetworkUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC466D0125E1ED6B4394FA7 /* libPods-YTKNetworkUITests.a */; };
 /* End PBXBuildFile section */
@@ -58,6 +60,11 @@
 		907A1092212000C100F577E1 /* YTKNetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YTKNetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		907A1096212000C100F577E1 /* YTKNetworkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTKNetworkUITests.m; sourceTree = "<group>"; };
 		907A1098212000C100F577E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		907A10A52120031700F577E1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		907A10AB212008B400F577E1 /* AppDelegate+Configure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Configure.h"; sourceTree = "<group>"; };
+		907A10AC212008B400F577E1 /* AppDelegate+Configure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Configure.m"; sourceTree = "<group>"; };
+		907A10AF2120094200F577E1 /* YTKLoginApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTKLoginApi.h; sourceTree = "<group>"; };
+		907A10B02120094200F577E1 /* YTKLoginApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTKLoginApi.m; sourceTree = "<group>"; };
 		90EAA33F697EF1E9BEE97C26 /* Pods-YTKNetworkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTKNetworkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YTKNetworkUITests/Pods-YTKNetworkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		989DED1399122BB63C3503FD /* Pods-YTKNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTKNetwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YTKNetwork/Pods-YTKNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 		B80FF372C3B2FD5E05516BF2 /* Pods-YTKNetworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTKNetworkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YTKNetworkTests/Pods-YTKNetworkTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +138,9 @@
 		907A1071212000C000F577E1 /* YTKNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				907A10AE2120091D00F577E1 /* YTKNetworkDemo */,
+				907A10AA212008B400F577E1 /* AppDelegateConfigure */,
+				907A10A42120030100F577E1 /* AboutYTKNetwork */,
 				907A1072212000C000F577E1 /* AppDelegate.h */,
 				907A1073212000C000F577E1 /* AppDelegate.m */,
 				907A1075212000C000F577E1 /* ViewController.h */,
@@ -160,6 +170,32 @@
 				907A1098212000C100F577E1 /* Info.plist */,
 			);
 			path = YTKNetworkUITests;
+			sourceTree = "<group>";
+		};
+		907A10A42120030100F577E1 /* AboutYTKNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				907A10A52120031700F577E1 /* README.md */,
+			);
+			path = AboutYTKNetwork;
+			sourceTree = "<group>";
+		};
+		907A10AA212008B400F577E1 /* AppDelegateConfigure */ = {
+			isa = PBXGroup;
+			children = (
+				907A10AB212008B400F577E1 /* AppDelegate+Configure.h */,
+				907A10AC212008B400F577E1 /* AppDelegate+Configure.m */,
+			);
+			path = AppDelegateConfigure;
+			sourceTree = "<group>";
+		};
+		907A10AE2120091D00F577E1 /* YTKNetworkDemo */ = {
+			isa = PBXGroup;
+			children = (
+				907A10AF2120094200F577E1 /* YTKLoginApi.h */,
+				907A10B02120094200F577E1 /* YTKLoginApi.m */,
+			);
+			path = YTKNetworkDemo;
 			sourceTree = "<group>";
 		};
 		E777122CA03CE14D739354C2 /* Frameworks */ = {
@@ -363,8 +399,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				907A1077212000C000F577E1 /* ViewController.m in Sources */,
+				907A10B12120094200F577E1 /* YTKLoginApi.m in Sources */,
 				907A1082212000C100F577E1 /* main.m in Sources */,
 				907A1074212000C000F577E1 /* AppDelegate.m in Sources */,
+				907A10AD212008B400F577E1 /* AppDelegate+Configure.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,7 +575,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J3Y5FLL6V8;
 				INFOPLIST_FILE = YTKNetwork/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephanie.www.YTKNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -552,7 +594,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J3Y5FLL6V8;
 				INFOPLIST_FILE = YTKNetwork/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephanie.www.YTKNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -567,7 +613,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J3Y5FLL6V8;
 				INFOPLIST_FILE = YTKNetworkTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephanie.www.YTKNetworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -583,7 +633,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J3Y5FLL6V8;
 				INFOPLIST_FILE = YTKNetworkTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephanie.www.YTKNetworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -598,7 +652,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J3Y5FLL6V8;
 				INFOPLIST_FILE = YTKNetworkUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephanie.www.YTKNetworkUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -613,7 +671,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J3Y5FLL6V8;
 				INFOPLIST_FILE = YTKNetworkUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephanie.www.YTKNetworkUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "AppDelegate+Configure.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self configureYTKNetwork];
     return YES;
 }
 

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,63 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E3h-vj-KD5">
+                                <rect key="frame" x="99.5" y="44" width="176" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="176" id="EJ6-7X-qUt"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SJe-8d-h5N">
+                                <rect key="frame" x="99.5" y="89" width="176" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eb9-7A-9bX">
+                                <rect key="frame" x="125.5" y="177" width="124" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="124" id="kGe-H8-9aP"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="r7M-8a-YUy"/>
+                                </constraints>
+                                <state key="normal" title="登录"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="r7M-8a-YUy"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="logInAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9c5-CO-Xb0"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="E3h-vj-KD5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="F2A-HM-M3W"/>
+                            <constraint firstItem="eb9-7A-9bX" firstAttribute="top" secondItem="SJe-8d-h5N" secondAttribute="bottom" constant="58" id="JTC-pA-XUv"/>
+                            <constraint firstItem="SJe-8d-h5N" firstAttribute="width" secondItem="E3h-vj-KD5" secondAttribute="width" id="LhJ-Oz-RoT"/>
+                            <constraint firstItem="SJe-8d-h5N" firstAttribute="centerX" secondItem="E3h-vj-KD5" secondAttribute="centerX" id="WKR-7h-GWa"/>
+                            <constraint firstItem="E3h-vj-KD5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bjs-nc-NeM"/>
+                            <constraint firstItem="eb9-7A-9bX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="v0l-pW-8jS"/>
+                            <constraint firstItem="SJe-8d-h5N" firstAttribute="top" secondItem="E3h-vj-KD5" secondAttribute="bottom" constant="15" id="vEv-li-fgF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="userNameTF" destination="E3h-vj-KD5" id="KC4-Fb-Fu9"/>
+                        <outlet property="userPassWordTF" destination="SJe-8d-h5N" id="ouO-aT-LlK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
         </scene>
     </scenes>
 </document>
